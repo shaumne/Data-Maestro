@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>News Brief</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        input[type="submit"] {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+<br> <br>
+    <div class="container">
+        <form action="/" method="POST">
+            <div class="form-group">
+                <label for="keywords">What topics do you want updates on? (Enter keywords separated by commas):</label>
+                <input type="text" class="form-control" name="keywords" required>
+            </div>
+            <div class="form-group">
+                <label for="profession">What is your profession?</label>
+                <input type="text" class="form-control" name="profession" required>
+            </div>
+            <div class="form-group">
+                <label for="political_view">What is your political point of view?</label>
+                <select class="form-control" name="political_view" required>
+                    <option value="liberal">Liberal</option>
+                    <option value="neutral">Politically Neutral</option>
+                    <option value="conservative">Conservative</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="challenge_reinforce">Do you want to challenge or reinforce your point of view?</label>
+                <select class="form-control" name="challenge_reinforce" required>
+                    <option value="echo_chamber">Reinforce beliefs</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="broaden_horizons">Broaden horizons</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tone">Select the tone:</label>
+                <select class="form-control" name="tone" required>
+                    <option value="cautious">Cautious</option>
+                    <option value="optimistic">Optimistic</option>
+                    <option value="sensationalist">Sensationalist</option>
+                    <option value="friendly_pithy">Friendly and pithy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="favourite_artist">Who is your favourite artist or musician?</label>
+                <input type="text" class="form-control" name="favourite_artist" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Latest News Summary</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
