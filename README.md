@@ -4,7 +4,7 @@ This Flask app is designed to collect news headlines from multiple sources based
 ### Installation
 - Clone this repository to your local machine.
 - Install the required packages by running `pip install -r requirements.txt` in your terminal.
-- Create an OpenAI API key here and replace <your-api-key-here> in NewsBriefCompiler_KWFilter.py with your actual key.
+- Create an OpenAI API key here and replace <your-api-key-here> in func.py with your actual key.
 
 ### Usage
 - Run the app by running python main.py in your terminal.
