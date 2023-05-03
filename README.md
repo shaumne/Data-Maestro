@@ -3,19 +3,18 @@ This Flask app is designed to collect news headlines from multiple sources based
 
 ### Installation
 - Clone this repository to your local machine.
-- Install the required packages by running pip install -r requirements.txt in your terminal.
+- Install the required packages by running `pip install -r requirements.txt` in your terminal.
 - Create an OpenAI API key here and replace <your-api-key-here> in NewsBriefCompiler_KWFilter.py with your actual key.
 
 ### Usage
-- Run  `pip install -r requirements.txt`
-- Run the app by running python BriefApp.py in your terminal.
+- Run the app by running python main.py in your terminal.
 - Go to http://localhost:5000/ in your web browser.
 - Enter your desired keywords, political view, challenge/reinforce, tone, profession, and favourite artist.
 - Click the "Generate Summary" button to see your personalized summary.
 
 ### Files
-- BriefApp.py: The main Flask app file.
-- NewsBriefCompiler_KWFilter.py: The script that collects news headlines and generates the summary.
+- main.py: The main Flask app file.
+- func.py: The script that collects news headlines and generates the summary.
 - template/index.html: The HTML file for the homepage.
 - template/summary.html: The HTML file for the summary page.
 
