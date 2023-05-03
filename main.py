@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from NewsBriefCompiler_KWFilter import get_summary
+from func import get_summary
 
 
 class NewsBriefApp:
